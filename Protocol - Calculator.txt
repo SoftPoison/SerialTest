@@ -1,0 +1,35 @@
+Calculator: 
+
+====================
+HEADER
+====================
+
+| ID | SIZE |
+  1     2
+
+--------------------
+SER_CONNECT - 0x01
+--------------------
+
+Attempts to instantiate the serial connection with the microcontroller.
+Expects ~VAL in return packet.
+
+| HEADER | VAL |
+   3        1
+
+--------------------
+GET_SSID_LIST - 0x21
+--------------------
+
+Requests the list of available SSIDs.
+
+| HEADER |
+    3
+
+--------------------
+SSID_SELECT - 0x22
+--------------------
+
+| HEADER | ID | LEN | PASSWORD |
+    3      1     1      0-63
+

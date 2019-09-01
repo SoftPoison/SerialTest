@@ -1,0 +1,26 @@
+Microcontroller:
+
+====================
+HEADER
+====================
+
+| ID | SIZE |
+  1     2
+
+--------------------
+SER_ESTABLISH - 0x81
+--------------------
+
+| HEADER | VAL |
+    3       1
+
+--------------------
+SSID_LIST - 0xA1
+--------------------
+
+| HEADER | LEN | SSID_BLK* |
+    3       1       0-?
+
+SSID_BLK:
+| ID | RSSI | LEN | SSID |
+  1     1      1    0-32

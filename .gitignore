@@ -1,0 +1,7 @@
+.vscode/
+Debug/
+INIT/
+SDCard/
+
+FXSH_Build.bat
+*.G1A

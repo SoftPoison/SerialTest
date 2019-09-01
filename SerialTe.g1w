@@ -1,0 +1,17 @@
+[DLSimProject]
+Name=SerialTe
+Version=1
+Model=:fx-9860G.dlm
+SourcePath=SRC
+MemoryPath=INIT
+MemCardPath=SDCard
+
+[Program1]
+Program=SerialTe.G1A
+Debug=Debug\FXADDINror.dbg
+LoadAddress=80000000:90100000
+
+[Files]
+SourceFile=:src\main.c
+HeaderFile=:src\serial.h
+HeaderFile=:src\syscalls.h
