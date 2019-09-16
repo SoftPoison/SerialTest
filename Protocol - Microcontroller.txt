@@ -22,5 +22,28 @@ SSID_LIST - 0xA1
     3       1       0-?
 
 SSID_BLK:
-| ID | RSSI | LEN | SSID |
-  1     1      1    0-32
+| ID | MODE | RSSI | LEN | SSID |
+  1     1      1      1     32
+
+MODE: [
+	0 -> open
+	1 -> WEP
+	2 -> WPA
+	3 -> WPA2
+	4 -> unsupported
+]
+
+RSSI: 1 (strong) - 127 (weak)
+
+--------------------
+CON_STATUS - 0xA3
+--------------------
+
+| HEADER | STATUS |
+    3        1
+
+STATUS: [
+	0 -> Connected
+	1 -> Connecting
+	2 -> Not Connected
+]
